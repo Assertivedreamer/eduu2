@@ -1,0 +1,53 @@
+<div>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Employee ID</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Salary</th>
+                <th scope="col">Date Of Birth</th>
+                <th>Email</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>
+                    <input type="text" name="" id="" [(ngModel)]="user.employeeID" *ngIf="showEdit">
+                    <span *ngIf="!showEdit">{{user.employeeID}}
+                    </span>
+                </th>
+                <th>
+                    <input type="text" name="" id="" [(ngModel)]="user.firstName" *ngIf="showEdit">
+                    <span *ngIf="!showEdit">{{user.firstName}}</span>
+
+                </th>
+                <th>
+                    <input type="text" name="" id="" [(ngModel)]="user.lastName" *ngIf="showEdit">
+                    <span *ngIf=" !showEdit ">{{user.lastName}}</span>
+                </th>
+                <th>
+                    <input type="text " name=" " id=" " [(ngModel)]="user.salary" *ngIf="showEdit">
+                    <span *ngIf="!showEdit ">{{user.salary}}</span>
+                </th>
+                <th>
+                    <input type="text " name=" " id=" " [(ngModel)]="user.dob" *ngIf="showEdit">
+                    <span *ngIf="!showEdit ">{{user.dob}}</span>
+                </th>
+                <th>
+                    <input type="text " name=" " id=" " [(ngModel)]="user.email" *ngIf="showEdit">
+                    <span *ngIf="!showEdit ">{{user.email}}</span>
+                </th>
+                <th>
+                    <button class="btn btn-primary" (click)="editEmp()" *ngIf="!showEdit">Edit</button>&nbsp;
+                    <button class="btn btn-success" (click)="updateEmp()" *ngIf="showEdit">Update</button>
+                </th>
+        </tbody>
+    </table>
+</div>
+
+<footer class="fixed-bottom text-center">
+    <p>Author: Nikhil Parakh Email-<a href=" # ">nikhil.parakh@mpokket.com</a></p>
+    <p>Edureka Assignment 2</p>
+</footer>
